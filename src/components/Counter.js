@@ -7,7 +7,16 @@ function Counter() {
     setCount(count + 1);
   }
 
-  return <button onClick={increment}>I have been clicked {count} times</button>;
+  const counterStyle = {
+    color: "green",
+    fontSize: "240px", 
+    cursor: "pointer",
+    alignItems:"center",
+    justifyContent:"center",
+    
+  };
+
+  return <div style={counterStyle} onClick={increment}>{count}</div>;
 }
 
 export default Counter;
